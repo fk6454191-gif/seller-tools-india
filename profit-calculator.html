@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profit Calculator for Online Sellers | Seller Tools India</title>
+    <meta name="description" content="Calculate your online selling profit, margin, ROI and costs with the free Seller Tools India Profit Calculator.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-page">
+
+    <div class="app-shell">
+<a href="index.html" class="back-home">
+    ← Back to Home
+</a>
+        <div class="top-badge">
+            SELLER TOOLS ⚡
+        </div>
+
+        <h1>Profit Check</h1>
+
+        <p class="subtitle">
+            Know your real profit before you sell.
+        </p>
+
+        <div class="calculator modern-card">
+<label>Marketplace</label>
+<small>Where are you selling?</small>
+
+<select id="marketplace">
+    <option value="amazon">Amazon India</option>
+    <option value="flipkart">Flipkart</option>
+    <option value="meesho">Meesho</option>
+    <option value="other">Other / Own Website</option>
+</select>
+
+
+<label>Selling Price</label>
+<small>Customer pays this amount</small>
+<input type="number" id="sellingPrice" placeholder="₹ 699">
+
+            <label>Product Cost</label>
+            <small>What did the product actually cost you?</small>
+            <input id="productCost" type="number" placeholder="₹ 250">
+
+            <label>Shipping Cost</label>
+            <small>Delivery ka real cost</small>
+            <input id="shippingCost" type="number" placeholder="₹ 80">
+
+            <label>Packaging Cost</label>
+            <small>Box, tape, label etc.</small>
+            <input id="packagingCost" type="number" placeholder="₹ 20">
+
+            <label id="marketplaceFeeLabel">Marketplace Fee</label>
+
+<small id="marketplaceFeeHelp">
+    Enter the total marketplace charges
+</small>
+
+<input
+    id="marketplaceFee"
+    type="number"
+    placeholder="₹ 100"
+
+
+            <label>Other Cost</label>
+            <small>Anything else eating your margin?</small>
+            <input id="otherCost" type="number" placeholder="₹ 10">
+<label>Expected Return Rate (%)</label>
+<small>How many orders usually come back?</small>
+<input id="returnRate" type="number" placeholder="10">
+
+<label>Number of Orders</label>
+<small>How many orders do you want to project?</small>
+<input id="orderCount" type="number" placeholder="100" value="100">
+
+<label>Return Cost per Order</label>
+<small>Extra cost when an order is returned</small>
+<input id="returnCost" type="number" placeholder="₹ 100">
+            <button class="main-btn" onclick="calculateProfit()">
+                Show My Profit ⚡
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator for Online Sellers | Seller Tools India</title>
+    <meta name="description" content="Calculate GST quickly with the free Seller Tools India GST Calculator. Add or remove GST from any amount using your selected GST rate.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-page">
+
+    <div class="app-shell">
+<a href="index.html" class="back-home">
+    ← Back to Home
+</a>
+        <div class="top-badge">
+            SELLER TOOLS ⚡
+        </div>
+
+        <h1>GST Calculator</h1>
+
+        <p class="subtitle">
+            Calculate GST quickly for your selling price.
+        </p>
+
+        <div class="calculator modern-card">
+
+            <label>Amount</label>
+            <small>Enter product amount</small>
+            <input
+                id="gstAmount"
+                type="number"
+                placeholder="₹ 1000"
+            >
+
+            <label>GST Rate (%)</label>
+            <small>Select applicable GST rate</small>
+
+            <select id="gstRate">
+                <option value="5">5%</option>
+                <option value="12">12%</option>
+                <option value="18" selected>18%</option>
+                <option value="28">28%</option>
+            </select>
+
+            <label>Calculation Type</label>
+            <small>Is GST already included in the amount?</small>
+
+            <select id="gstType">
+                <option value="exclusive">Add GST</option>
+                <option value="inclusive">GST Included</option>
+            </select>
+
+            <button
+                class="main-btn"
+                onclick="calculateGST()"
+            >
+                Calculate GST ⚡
+            </button>
+
+            <div id="gstResult"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

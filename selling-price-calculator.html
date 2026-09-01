@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Selling Price Calculator for Online Sellers | Seller Tools India</title>
+<meta name="description" content="Calculate the right selling price based on product cost, shipping, packaging, marketplace fees and target profit margin.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-page">
+
+    <div class="app-shell">
+<a href="index.html" class="back-home">
+    ← Back to Home
+</a>
+        <div class="top-badge">
+            SELLER TOOLS ⚡
+        </div>
+
+        <h1>Selling Price Calculator</h1>
+
+        <p class="subtitle">
+            Find the right selling price for your target margin.
+        </p>
+
+        <div class="calculator modern-card">
+
+            <label>Product Cost</label>
+            <small>Your buying or manufacturing cost</small>
+            <input
+                id="spProductCost"
+                type="number"
+                placeholder="₹ 250"
+            >
+
+            <label>Shipping Cost</label>
+            <small>Delivery cost per order</small>
+            <input
+                id="spShippingCost"
+                type="number"
+                placeholder="₹ 80"
+            >
+
+            <label>Packaging Cost</label>
+            <small>Box, tape, label etc.</small>
+            <input
+                id="spPackagingCost"
+                type="number"
+                placeholder="₹ 20"
+            >
+
+            <label>Marketplace Fee</label>
+            <small>Amazon / Flipkart / Meesho or platform charges</small>
+            <input
+                id="spMarketplaceFee"
+                type="number"
+                placeholder="₹ 100"
+            >
+
+            <label>Other Cost</label>
+            <small>Any extra cost per order</small>
+            <input
+                id="spOtherCost"
+                type="number"
+                placeholder="₹ 10"
+            >
+
+            <label>Target Profit Margin (%)</label>
+            <small>How much margin do you want?</small>
+            <input
+                id="spTargetMargin"
+                type="number"
+                placeholder="30"
+            >
+
+            <button
+                class="main-btn"
+                onclick="calculateSellingPrice()"
+            >
+                Suggest Selling Price ⚡
+            </button>
+
+            <div id="sellingPriceResult"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
